@@ -1,0 +1,55 @@
+.app-container{
+          width: 75%;
+          height: 75vh;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          border: 1px solid rgba(255, 255, 255, 0.9);
+}
+nav{
+          width: 10%;
+          height: 75vh;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+}
+nav i{
+          color: #375778;
+          font-size: 32px;
+}
+nav .button-area{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          height: 60vh;
+          flex-direction: column;
+}
+nav .button-area i,
+nav .log-out i{
+          width: 64px;
+          height: 64px;
+          margin-bottom: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 16px;
+          cursor: pointer;
+          transition: 0.3s all ease;
+}
+nav .button-area i:hover{
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          color: #5DADE2;
+}
+nav .log-out i:hover{
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          color: #D98880;
+}
