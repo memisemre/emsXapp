@@ -64,6 +64,7 @@ main{
           width: 88%;
           height: 70vh;
           border-radius: 24px;
+          display: flex;
 }
 main .left-side{
           width: 25%;
@@ -206,11 +207,186 @@ main .left-side .user-cards .card .name .message-notification{
           background-color: #2c80ff;
           margin-left: 40%
 }
-
 main .left-side .user-cards .card .profile-area .message-text{
           margin-top: 0.5vh;
           font-size: 16px;
           overflow: hidden;
           height: 24px;
           color: #b3bcd3;
+}
+main .right-side{
+          width: 75%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          border-top-right-radius: 24px;
+          border-bottom-right-radius: 24px;
+}
+main .right-side .profile-area{
+          width: 100%;
+          height: 10vh;
+          border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+          display: flex;
+          align-items: center;
+}
+main .right-side .profile-area .photograph{
+          display: flex;
+          align-items: center;
+}
+main .right-side .profile-area .photograph img{
+          width: 64px;
+          height: 64px;
+          margin-left: 1em;
+          border-radius: 50%;
+}
+main .right-side .profile-area .photograph .user-situation{
+          width: 10px;
+          height: 10px;
+          background-color: #8aea9b;
+          border-radius: 50%;
+          margin-top: 32px;
+          margin-left: -8px;
+}
+main .right-side .profile-area .user-info{
+          margin-left: 1em;
+          width: 75%;
+}
+main .right-side .profile-area .user-info .user-name{
+          font-size: 24px;
+          color: #46607f;
+          font-weight: bold;
+}
+main .right-side .profile-area .user-info .user-history{
+          font-size: 16px;
+          color: #909bb8;
+}
+main .right-side .profile-area .buttons i{
+          font-size: 32px;
+          color: #375778;
+          cursor: pointer;
+          transition: 0.3s all ease;
+}
+main .right-side .profile-area .buttons i:hover{
+          color: #5DADE2;
+}
+main .right-side .profile-area .buttons i:nth-child(1),
+main .right-side .profile-area .buttons i:nth-child(2){
+          margin-right: 16px;
+}
+main .right-side .chat-area{
+          width: 100%;
+          height: 50vh;
+          border-bottom:3px solid rgba(255, 255, 255, 0.9) ;
+}
+main .text-chat {
+          display: flex;
+          align-items: center;
+}
+main .text-chat .buttons{
+          display: flex;
+          align-items: center;
+          width: 20%;
+          height: 10vh;
+          margin-left: 0.5em;
+}
+main .text-chat .buttons i {
+          transition: 0.3s all ease;
+          width: 48px;
+          height: 48px;
+          font-size: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #375778;
+          cursor: pointer;
+          margin-left: 0.5em;
+}
+main .text-chat .buttons i:hover{
+          color: #5DADE2;
+}
+main .text-chat .buttons .apps{
+          width: 48px;
+          transition: 0.3s all ease;
+          height: 48px;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,1fr);
+          row-gap: 2px;
+          column-gap:2px;
+          padding: 12px;
+          cursor: pointer;
+          margin-left: 0.5em;
+}
+main .text-chat .buttons .apps:hover div{
+          border: 3px solid #5DADE2;
+}
+main .text-chat .buttons .apps div{
+          border: 3px solid #375778;
+}
+main .text-chat input{
+          border: none;
+          border-radius: 16px;
+          padding-left: 8px;
+          font-size: 20px;
+          color: #909bb8;
+          height: 5vh;
+          width: 60%;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+}
+main .text-chat input:focus{
+          outline: none;
+          border: 3px solid #bcc4e1;
+}
+main .text-chat .chat-buttons i{
+          font-size: 32px;
+          color: #375778;
+          margin-left: 1em;
+          transition: 0.3s all ease;
+          cursor: pointer;
+}
+main .text-chat .chat-buttons i:hover{
+          color: #5DADE2;
+}
+main .right-side .chat-area .message-container-across-person{
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+}
+main .right-side .chat-area .message-container-me-person{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+}
+main .right-side .chat-area .message-container-across-person .message{
+          max-width: 50%;
+          margin: 1em 1.5em;
+          padding: 16px;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          border-radius: 16px 16px 16px 0;
+}
+main .right-side .chat-area .message-container-across-person .message .date,
+main .message-container-me-person .message .date{
+          margin-top: 1vh;
+          color: #b3bcd3;
+}
+main .message-container-me-person .message{
+          max-width: 50%;
+          margin: 1em 1.5em;
+          padding: 16px;
+          background: rgba(255, 255, 255, 0.8);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          border-radius: 16px 16px 16px 0;
+}
+main .right-side .chat-area .message-container-across-person-writing{
+          max-width: 50%;
 }
