@@ -7,6 +7,8 @@
           backdrop-filter: blur(3.3px);
           -webkit-backdrop-filter: blur(3.3px);
           border: 1px solid rgba(255, 255, 255, 0.9);
+          display: flex;
+          align-items: center;
 }
 nav{
           width: 10%;
@@ -39,7 +41,8 @@ nav .log-out i{
           cursor: pointer;
           transition: 0.3s all ease;
 }
-nav .button-area i:hover{
+nav .button-area i:hover,
+main .left-side .menu .navbar .start-chat-button i:hover{
           background: rgba(255, 255, 255, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(3.3px);
@@ -52,4 +55,162 @@ nav .log-out i:hover{
           backdrop-filter: blur(3.3px);
           -webkit-backdrop-filter: blur(3.3px);
           color: #D98880;
+}
+main{
+          background: rgba(255, 255, 255, 0.3);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          width: 88%;
+          height: 70vh;
+          border-radius: 24px;
+}
+main .left-side{
+          width: 25%;
+          height: 70vh;
+          border-right: 3px double #eee;
+}
+main .left-side .menu{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+}
+main .left-side .menu .navbar{
+          margin-top: 1vh;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 6vh;
+}
+main .left-side .menu .navbar .logo{
+          font-size: 24px;
+          width: 80%;
+          color: #375778;
+}
+main .left-side .menu .navbar .logo span{
+          color: #5DADE2;
+          font-weight: bold;
+}
+main .left-side .menu .navbar .start-chat-button i{
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+           justify-content: center;
+          border-radius: 16px;
+          font-size: 24px;
+          cursor: pointer;
+          transition: 0.3s all ease;
+}
+main .left-side .menu .search-input{
+          width: 80%;
+          height: 5vh;
+          background: rgba(255, 255, 255, 0.3);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+          border-radius: 8px;
+          display: flex;
+}
+main .left-side .menu .search-input input{
+          width: 85%;
+          background: transparent;
+          border: none;
+          color: #bcc4e1;
+          font-size: 20px;
+          padding-left: 24px;
+          height: 100%;
+          border:3px solid transparent;
+}
+main .left-side .menu .search-input input:focus {
+          outline: none;
+          border:3px solid #5DADE2;
+          border-radius: 8px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          color: #375778;
+}
+main .left-side .menu .search-input .search-icon{
+          width: 15%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #375778;
+          font-size: 20px;
+          cursor: pointer;
+          border-left: 1px solid #CCD1D1;
+}
+main .left-side .user-cards {
+          margin-top: 1vh;
+          height: 75%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+}
+main .left-side .user-cards .card{
+          width: 90%;
+          height: 10vh;
+          background-color: transparent;
+          border: 1px solid #CCD1D1;
+          display: flex;
+          border-radius: 16px;
+          cursor: pointer;
+          margin-top: 16px;
+}
+main .left-side .user-cards .card-active,
+main .left-side .user-cards .card:hover{
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.3px);
+          -webkit-backdrop-filter: blur(3.3px);
+}
+main .left-side .user-cards .card .photograph{
+          width: 25%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          margin-right: 1em;
+}
+main .left-side .user-cards .card .photograph img{
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: 10%;
+}
+main .left-side .user-cards .card .photograph .user-situation {
+          width: 10px;
+          height: 10px;
+          background-color: gray;
+          border-radius: 50%;
+          margin-top: 50%;
+          margin-left: -10%;
+}
+main .left-side .user-cards .card .photograph .user-active{
+          background-color: #8aea9b;
+}
+main .left-side .user-cards .card .name{
+          font-size: 24px;
+          margin-top: 1.5vh;
+          color: #46607f;
+          display: flex;
+          align-items: center;
+}
+main .left-side .user-cards .card .name .message-notification{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #2c80ff;
+          margin-left: 40%
+}
+
+main .left-side .user-cards .card .profile-area .message-text{
+          margin-top: 0.5vh;
+          font-size: 16px;
+          overflow: hidden;
+          height: 24px;
+          color: #b3bcd3;
 }
